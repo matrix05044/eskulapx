@@ -10,7 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 import styled from 'styled-components';
 import Subheading from 'components/atoms/Subheading/Subheading';
 import Cards from 'components/organisms/Cards/Cards';
-import Counter from 'components/atoms/Counter/Counter';
+import Counters from 'components/molecues/Counters/Counters';
 
 const MainWrapper = styled.main`
   padding: 0 10%;
@@ -50,9 +50,9 @@ const Home = () => (
     <MainWrapper>
       <Subheading>Nasz oferta</Subheading>
       <Cards last={5} />
-      <Subheading>Nasz oferta</Subheading>
-      <Counter />
+      <Subheading>Statystyki</Subheading>
     </MainWrapper>
+    <Counters />
   </UserTemplate>
 );
 

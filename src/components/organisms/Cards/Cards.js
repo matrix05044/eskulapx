@@ -8,6 +8,7 @@ const CardsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   justify-content: space-between;
+  justify-items: center;
   grid-row-gap: 5rem;
   grid-column-gap: 5rem;
 `;

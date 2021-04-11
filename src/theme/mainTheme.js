@@ -5,6 +5,7 @@ const theme = {
   red: '#650008',
   white: 'white',
   thin: 100,
+  lighty: 200,
   light: 300,
   bold: 600,
   fontSize: {

@@ -17,7 +17,7 @@ const CardDescWrapper = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-size: ${({ theme }) => theme.fontSize.s};
+  font-size: ${({ theme }) => theme.fontSize.m};
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-weight: ${({ theme }) => theme.light};
@@ -26,13 +26,13 @@ const CardTitle = styled.h3`
 const StyledParagraph = styled(Paragraph)`
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: 0.2rem;
   line-height: 1.5;
-  opacity: 0.8;
+  color: #e6e6e6;
 `;
 
 // eslint-disable-next-line react/prop-types
@@ -42,6 +42,9 @@ const Card = ({ title, description, img }) => {
     height: 40rem;
     position: relative;
     background-position: center;
+    background-size: cover;
+    max-width: 350px;
+    width: 100%;
 
     :hover > div {
       height: 100%;
